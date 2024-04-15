@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Aomdata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="Scripts/Interface/reset.min.css">
+<link rel='stylesheet' href='Scripts/Interface/fonts.css'><link rel="stylesheet" href="Scripts/Interface/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+
+
+<h1><div id=container style="text-align: center;">
+  <h1 style="text-align: center; font-size: 76px; font-weight: bold; color: #2A4D5E;">Aomdata</h1>
+  <div id=flip style="text-align: center;">
+    <div><div>Trains</div></div>
+    <div><div>Cars</div></div>
+    <div><div>Intermodalité</div></div>
+  </div>
+</div> </h1>
+
+
+
+
+</br></br>
+<h1 class="title" style="font-size: 29px;">Exploitation </h1>
+
+<div id="app" class="container">
+  <card data-image="Scripts/Interface/Images/Offre.gif" onclick="window.open('https://sj-hdf-offre-ter-hdf-bienvenue-37vqxq.streamlit.app/Fiches_gares', '_blank')" data-image="https://tof.cx/images/2017/09/07/d5511f292f636eb69e66eddf9236d333.gif">
+    <h1 slot="header">Fiche Gare</h1>
+    <p slot="content">Choisissez une gare pour voir sa photo, connaître le nombre de ses visiteurs, le nombre de trains qui y passent, ou pour découvrir des informations générales à son sujet.</p>
+  </card>
+ <card data-image="https://geoffboeing.com/wp-content/uploads/2017/08/osmnx-isochrone-lines-berkeley.png" onclick="window.open('https://sj-hdf-offre-ter-hdf-bienvenue-37vqxq.streamlit.app/Isochrone', '_blank')">
+    <h1 slot="header">Isochrones intermodaux</h1>
+    <p slot="content">Générateur d'isochrones intermodaux à partir d'une gare.</p>
+  </card>
+  <card data-image="Scripts/Interface/Images/Maintenance.jpg" onclick="window.open('Livrables/Maintenance_matériel.html', '_blank')">
+    <h1 slot="header">Maintenance</h1>
+    <p slot="content">Plan d'un  logiciel de  gestion de maintenance assistée par ordinateur (GMAO) à usage de la Région.</p>
+  </card>
+  <card data-image="https://remeng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2021/11/30/node_317943/12509635/public/2021/11/30/B9729169291Z.1_20211130065330_000%2BGVAJE9BVL.1-0.jpg?itok=s--ERtNr1638251616" onclick="window.open('Livrables/Offre_transport.html', '_blank')">
+    <h1 slot="header">Planification</h1>
+    <p slot="content">Analyse de l'offre à partir du format GTFS et de l'API SNCF Numérique.</p>
+  </card>
+ 
+</div>
+
+<h1 class="title" style="font-size: 29px;">Qualité de l'offre</h1>
+
+<div id="app2" class="container">
+
+  <card data-image="Scripts/Interface/Images/Incidents.jpg" onclick="window.open('Livrables/Incidents.html', '_blank')">
+    <h1 slot="header">Incidents</h1>
+    <p slot="content">Enquête sur les incidents  et leurs conséquences.</p>
+  </card>
+
+  <card data-image="Scripts/Interface/Images/Rames.jpg" onclick="window.open('Livrables/Ecarts_composition.html', '_blank')">
+    <h1 slot="header">Composition rame</h1>
+    <p slot="content">Algorithme qui compare les composition des rames d'une année sur l'autre.</p>
+  </card>
+  <card data-image="Scripts/Interface/Images/frequentation.jpg" onclick="window.open('Livrables/Comptage.html', '_blank')">
+    <h1 slot="header">Fréquentation</h1>
+    <p slot="content">Méthodologie pour évaluer l'algorithme de comptage des montées et descentes dans les trains.</p>
+  </card>
+  <card data-image="https://www.supplychaininfo.eu/wp-content/uploads/2018/11/indicateur-de-production.jpg" onclick="window.open('https://sj-hdf-offre-ter-hdf-bienvenue-37vqxq.streamlit.app/Qualit%C3%A9_offre', '_blank')">
+    <h1 slot="header">Indicateurs</h1>
+    <p slot="content">Indicateurs  permettant de suivre la performance de l'offre de mobilité convenue par contractualisation avec les opérateurs de transport.</p>
+  </card>
+
+
+
+</div>
+
+<h1 class="title" style="font-size: 29px;"> Relations usagers </h1> 
+
+<div id="app3" class="container">
+  <card data-image="Scripts/Interface/Images/Retours_usager.jpg" onclick="window.open('Livrables/Retours_usager.html', '_blank')">
+    <h1 slot="header">Retours usagers</h1>
+    <p slot="content">Bilan des retours usagers provenant de la Région,de la SNCF et des réseaux sociaux.</p>
+  </card>
+
+  <card data-image="https://cinedia.fr/wp-content/uploads/2021/06/social-network.gif" onclick="window.open('https://sj-hdf-relation-usager-hdf-bienvenue-gce4r1.streamlit.app/Bilan_des_retours_', '_blank')">
+    <h1 slot="header">Réseaux sociaux</h1>
+    <p slot="content">Analyse des retours usagers issues des réseaux sociaux (facebook, twitter) via des algorithmes de machine learning (NLP).</p>
+  </card>
+  <card data-image="Scripts/Interface/Images/Surete.jpg" onclick="window.open('Livrables/Surete_ferroviaire.html', '_blank')">
+    <h1 slot="header">Sûreté ferroviaire</h1>
+    <p slot="content">Etude des actes de délinquances et des dispositifs de sûreté.</p>
+  </card>
+
+ 
+ 
+</div>
+
+<h1 class="title" style="font-size: 29px;">Gouvernance des données</h1>
+
+<div id="app4" class="container">
+  <card data-image="Scripts/Interface/Images/Entrepot.jpg" onclick="window.open('/Entrepot/', '_blank')">
+    <h1 slot="header">Entrepôt data</h1>
+    <p slot="content">Stockage des bases de données métiers de la DST.</p>
+  </card>
+  <card id="toggleButton" data-image="https://www.qwesta.fr/image/partial/c/h/o/2face61b54d5c72fd4d077c7ea258ff0_choisirmodeanimationOAU7x-.jpg">
+    <h1 slot="header">Nos agents</h1>
+    <p slot="content">Les algorithmes de gouvernance des données.</p>
+  </card>
+
+  <card  id="toggleButton2" data-image="https://mobilethinking.ch/wp-content/uploads/2021/12/presta-vs-part.jpeg" >
+    <h1 slot="header">Nos partenaires</h1>
+    <p slot="content">Les partenaires avec qui nous partageons des données.</p>
+  </card>
+
+</div>
+
+<div id="codeSection" style="display: none;">
+    <!-- Votre code HTML à masquer/afficher -->
+
+<h1 class="title" style="font-size: 29px;"> Nos agents </h1> 
+
+<div id="app5" class="container">
+   <card data-image="Scripts/Interface/Images/Inventoriste.jpg" onclick="window.open('Livrables/Catalogue_data.html', '_blank')">
+    <h1 slot="header">L' inventoriste</h1>
+    <p slot="content">Mets à disposition un catalogue décrivant les données contenues dans l'entrepôt.</p>
+  </card>
+  <card data-image="Scripts/Interface/Images/Livreur.jpg" onclick="window.open('Livrables/Le_connecteur.html', '_blank')">
+    <h1 slot="header">Le livreur</h1>
+    <p slot="content">Se connecte aux bases de données externes pour déposer les datas à la Région.</p>
+  </card>
+  <card data-image="Scripts/Interface/Images/Manager.webp" onclick="window.open('Livrables/Manager_programmes.html', '_blank')">
+    <h1 slot="header">Le manager</h1>
+    <p slot="content">Monitore la création des livrables et coordonne l'exécution des scripts.</p>
+  </card>
+  <card data-image="Scripts/Interface/Images/Juge.jpg" onclick="window.open('Livrables/Le_juriste.html', '_blank')">
+    <h1 slot="header">Le juriste</h1>
+    <p slot="content">Vérifie l'adéquation de la gouvernance des données avec la législation numérique.</p>
+  </card>
+  </card>
+  <card data-image="Scripts/Interface/Images/Vigile.jpg" onclick="window.open('Livrables/Le_vigile.html', '_blank')">
+    <h1 slot="header">Le vigile</h1>
+    <p slot="content">Propose des solutions de sécurité relatives aux traitements des données.</p>
+  </card>
+</div>
+
+
+</div>
+
+<div id="codeSection2" style="display: none;">
+    <!-- Votre code HTML à masquer/afficher -->
+
+<h1 class="title" style="font-size: 29px;"> Nos partenaires </h1> 
+
+<div id="app6" class="container">
+
+  <card data-image="https://pbs.twimg.com/media/F8pKWjIWEAAl64I?format=jpg&name=4096x4096" onclick="window.open('xxx', '_blank')">
+    <h1 slot="header">Citio</h1>
+    <p slot="content">Travaux sur les données de comptage.</p>
+  </card>
+ <card data-image="Scripts/Interface/Images/geo2france.jpg" onclick="window.open('https://www.geo2france.fr/', '_blank')">
+    <h1 slot="header">Géo2France</h1>
+    <p slot="content">Base de données publiques du SIG de la Région.</p>
+  </card>
+  <card data-image="https://www.hautsdefrance.fr/app/uploads/2016/07/logo-1400-par-1000-web-1024x731-1-1024x731.jpg" onclick="window.open('https://opendata.hautsdefrance.fr/', '_blank')">
+    <h1 slot="header">Open data HdF</h1>
+    <p slot="content">Base de données publique à destination des partenaires publics de la Région et des particuliers.</p>
+  </card>
+  <card data-image="https://www.lescachotteriesdelille.com/wp-content/uploads/2023/10/passpass_640x401.jpg" onclick="window.open('xxx', '_blank')">
+    <h1 slot="header">PassPass.fr</h1>
+    <p slot="content">Plateforme d'analyse des données de billetique.</p>
+  </card>
+
+  
+  <card data-image="https://www.u-n-t.fr/wp-content/uploads/2017/12/te%CC%81le%CC%81chargement.jpeg" onclick="window.open('https://transport.data.gouv.fr/', '_blank')">
+    <h1 slot="header">Transport data gouv</h1>
+    <p slot="content">Base de données publiques du ministère des transports.</p>
+  </card>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="logo"><b>~      <span>~             ~</span>  ~   <span>   ~</span>       ~        ~</b></div>
+
+
+<!-- partial -->
+  <script src='Scripts/Interface/vue.min.js'></script><script  src="Scripts/Interface/script.js"></script>
+
+</body>
+</html>
